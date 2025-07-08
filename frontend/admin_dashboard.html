@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - KHAN'S WARDROBE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased font-inter bg-gray-50">
+    <header class="bg-white shadow-lg py-4 md:py-5 mb-8">
+        <div class="container mx-auto px-4 md:px-6 flex justify-between items-center">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 font-playfair-display">Admin Dashboard</h1>
+            <button id="logout-btn" class="bg-red-700 hover:bg-red-800 text-white font-semibold py-2 px-4 rounded-md">Logout</button>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 md:px-6">
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-4">Add New Product</h2>
+            <form id="add-product-form" class="bg-white p-6 rounded-lg shadow-md grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input type="text" id="name" placeholder="Product Name" required class="border rounded px-3 py-2" />
+                <input type="number" id="price" placeholder="Price" required class="border rounded px-3 py-2" />
+                <input type="text" id="currency" placeholder="Currency" value="PKR" required class="border rounded px-3 py-2" />
+                <input type="number" id="stock" placeholder="Stock" required class="border rounded px-3 py-2" />
+                <input type="text" id="imageUrl" placeholder="Image URL (e.g. assets/images/u1.png)" required class="border rounded px-3 py-2" />
+                <input type="text" id="category" placeholder="Category (e.g. women)" required class="border rounded px-3 py-2" />
+                <input type="text" id="subcategory" placeholder="Subcategory (e.g. unstitched_1pc)" required class="border rounded px-3 py-2" />
+                <textarea id="description" placeholder="Description" class="border rounded px-3 py-2 md:col-span-2"></textarea>
+                <button type="submit" class="bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded-md md:col-span-2">Add Product</button>
+            </form>
+        </section>
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-4">All Products</h2>
+            <div id="products-table" class="overflow-x-auto bg-white rounded-lg shadow-md p-4"></div>
+        </section>
+        <section>
+            <h2 class="text-2xl font-bold mb-4">All Orders</h2>
+            <div id="orders-table" class="overflow-x-auto bg-white rounded-lg shadow-md p-4"></div>
+        </section>
+    </main>
+    <script src="admin_dashboard.js"></script>
+</body>
+</html> 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - KHAN'S WARDROBE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased font-inter">
+    <header class="bg-white shadow-lg py-4 md:py-5">
+        <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 main-heading mb-4 md:mb-0 font-playfair-display">KHAN'S WARDROBE</h1>
+            <a href="index.html" class="ml-4 flex items-center text-red-700 hover:text-red-900 font-semibold text-lg">Home</a>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 md:px-6 py-8 md:py-12 max-w-lg">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 md:mb-8 text-center font-playfair-display">Login</h2>
+        <form id="login-form" class="bg-white p-6 rounded-lg shadow-md">
+            <div class="mb-4">
+                <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                <input type="email" id="email" required class="w-full border rounded px-3 py-2" />
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 font-semibold mb-2">Password</label>
+                <input type="password" id="password" required class="w-full border rounded px-3 py-2" />
+            </div>
+            <button type="submit" class="w-full bg-red-700 hover:bg-red-800 text-white font-semibold py-2 px-4 rounded-md shadow-md transition duration-300">Login</button>
+        </form>
+        <p class="mt-4 text-center">Don't have an account? <a href="register.html" class="text-red-700 hover:underline">Register</a></p>
+    </main>
+    <footer class="bg-gray-900 text-white py-6 md:py-8 text-center mt-12">
+        <div class="container mx-auto px-4">
+            <p class="text-base md:text-lg">&copy; 2025 KHAN'S WARDROBE. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html> 

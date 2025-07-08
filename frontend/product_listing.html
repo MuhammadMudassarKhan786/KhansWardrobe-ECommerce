@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing - KHAN'S WARDROBE</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for 'Inter' and 'Playfair Display' -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased font-inter">
+    <header class="bg-white shadow-lg py-4 md:py-5">
+        <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center">
+            <!-- Brand Logo/Name -->
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 main-heading mb-4 md:mb-0 font-playfair-display">KHAN'S WARDROBE</h1>
+            <!-- Cart Icon/Link -->
+            <a href="cart.html" class="ml-4 flex items-center text-red-700 hover:text-red-900 font-semibold text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.35 2.7A1 1 0 007.5 17h9a1 1 0 00.95-.68L21 13M16 21a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                Cart
+            </a>
+            <!-- Navigation -->
+            <nav class="w-full md:w-auto">
+                <ul class="flex flex-wrap justify-center md:space-x-8 space-x-4">
+                    <li><a href="index.html" class="nav-link text-gray-700 hover:text-gray-900 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">HOME</a></li>
+                    <li class="relative group">
+                        <a href="women.html" id="women-nav-link" class="nav-link text-gray-700 hover:text-gray-900 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">WOMEN</a>
+                        <!-- Women's Subcategories Dropdown -->
+                        <div id="women-submenu" class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top hidden md:group-hover:block">
+                            <a href="product_listing.html?category=women&type=giftbox" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">EXCLUSIVE GIFT BOX</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">STITCHED</h4>
+                            <a href="product_listing.html?category=women&type=stitched&pieces=2pc" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">2 PIECE</a>
+                            <a href="product_listing.html?category=women&type=stitched&pieces=3pc" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">3 PIECE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">UN-STITCHED</h4>
+                            <a href="product_listing.html?category=women&type=unstitched&pieces=1pc" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">1 PIECE</a>
+                            <a href="product_listing.html?category=women&type=unstitched&pieces=2pc" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">2 PIECE</a>
+                            <a href="product_listing.html?category=women&type=unstitched&pieces=3pc" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">3 PIECE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">KURTI</h4>
+                            <a href="product_listing.html?category=women&type=kurti&style=tops" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">TOPS</a>
+                            <a href="product_listing.html?category=women&type=kurti&style=formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL KURTI</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">FORMALS</h4>
+                            <a href="product_listing.html?category=women&type=formals&style=stitched" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL STITCHED</a>
+                            <a href="product_listing.html?category=women&type=formals&style=unstitched" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL UNSTITCHED</a>
+                            <a href="product_listing.html?category=women&type=formals&style=kurti" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL KURTI</a>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <a href="men.html" id="men-nav-link" class="nav-link text-gray-700 hover:text-gray-900 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">MEN</a>
+                        <div id="men-submenu" class="absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-md shadow-lg py-2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top hidden md:group-hover:block">
+                            <a href="product_listing.html?category=men&type=exclusive-gift-box" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">EXCLUSIVE GIFT BOX</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">KAMEEZ SHALWAR</h4>
+                            <a href="product_listing.html?category=men&type=kameez-shalwar&style=casual" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">CASUAL</a>
+                            <a href="product_listing.html?category=men&type=kameez-shalwar&style=semi-formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SEMI-FORMAL</a>
+                            <a href="product_listing.html?category=men&type=kameez-shalwar&style=formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL</a>
+                            <a href="product_listing.html?category=men&type=kameez-shalwar&style=exclusive" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">EXCLUSIVE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">KURTA</h4>
+                            <a href="product_listing.html?category=men&type=kurta&style=casual" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">CASUAL</a>
+                            <a href="product_listing.html?category=men&type=kurta&style=semi-formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SEMI-FORMAL</a>
+                            <a href="product_listing.html?category=men&type=kurta&style=formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL</a>
+                            <a href="product_listing.html?category=men&type=kurta&style=short" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SHORT KURTA</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="product_listing.html?category=men&type=kameez-shalwar-waistcoat" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">KAMEEZ SHALWAR & WAISTCOAT</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">UNSTITCHED FABRIC</h4>
+                            <a href="product_listing.html?category=men&type=unstitched&style=platinum" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">PLATINUM CLASS</a>
+                            <a href="product_listing.html?category=men&type=unstitched&style=gold" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">GOLD CLASS</a>
+                            <a href="product_listing.html?category=men&type=unstitched&style=silver" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SILVER CLASS</a>
+                            <a href="product_listing.html?category=men&type=unstitched&style=boski" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">BOSKI</a>
+                            <a href="product_listing.html?category=men&type=unstitched&style=expression" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">EXPRESSION</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="product_listing.html?category=men&type=sweaters" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">SWEATERS</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="product_listing.html?category=men&type=waistcoat" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">WAISTCOAT</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="product_listing.html?category=men&type=caps" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">CAPS</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="product_listing.html?category=men&type=shawl" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">SHAWL</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="product_listing.html?category=men&type=pocket-square" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">POCKET SQUARE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">GROOMS COLLECTION</h4>
+                            <a href="product_listing.html?category=men&type=grooms&style=sherwani" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SHERWANI</a>
+                            <a href="product_listing.html?category=men&type=grooms&style=turban" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">TURBAN</a>
+                            <a href="product_listing.html?category=men&type=grooms&style=khussa" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">KHUSSA</a>
+                            <a href="product_listing.html?category=men&type=grooms&style=special-kurta" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SPECIAL KURTA</a>
+                            <a href="product_listing.html?category=men&type=grooms&style=teen-boys" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">TEEN BOYS</a>
+                            <a href="product_listing.html?category=men&type=grooms&style=kid-boys" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">KID BOYS</a>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <a href="boys_girls.html" id="boys-girls-nav-link" class="nav-link text-gray-700 hover:text-gray-900 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">BOYS & GIRLS</a>
+                        <div id="boys-girls-submenu" class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top hidden md:group-hover:block">
+                            <a href="product_listing.html?category=boys_girls&type=teen-girls" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">TEEN GIRLS</a>
+                            <a href="product_listing.html?category=boys_girls&type=teen-boys" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">TEEN BOYS</a>
+                            <a href="product_listing.html?category=boys_girls&type=kid-girls" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">KID GIRLS</a>
+                            <a href="product_listing.html?category=boys_girls&type=kid-boys" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">KID BOYS</a>
+                            <a href="product_listing.html?category=boys_girls&type=infant" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">INFANT</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-6 py-8 md:py-12">
+        <!-- Dynamic Category Title -->
+        <h2 id="category-title" class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 md:mb-8 text-center font-playfair-display"></h2>
+
+        <!-- Product Control Bar -->
+        <div class="flex flex-col sm:flex-row justify-between items-center mb-8">
+            <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+                <span id="item-count" class="text-gray-700 font-medium">0 ITEMS</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <label for="sort-by" class="text-gray-700 font-medium">SORT BY</label>
+                <div class="relative inline-block text-left">
+                    <select id="sort-by" class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition duration-150 ease-in-out">
+                        <option value="newest_arrivals">NEWEST ARRIVALS</option>
+                        <option value="price_asc">PRICE: LOW TO HIGH</option>
+                        <option value="price_desc">PRICE: HIGH TO LOW</option>
+                        <option value="name_asc">NAME: A-Z</option>
+                        <option value="name_desc">NAME: Z-A</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <section id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+            <!-- Products will be dynamically loaded here by product_listing.js -->
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6 md:py-8 text-center mt-12">
+        <div class="container mx-auto px-4">
+            <p class="text-base md:text-lg">&copy; 2025 KHAN'S WARDROBE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+    <script src="product_listing.js"></script>
+</body>
+</html>

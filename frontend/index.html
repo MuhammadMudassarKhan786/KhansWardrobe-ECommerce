@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHAN'S WARDROBE</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for 'Inter' and 'Playfair Display' (for a classy look) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #f8fafc;
+            font-family: 'Inter', sans-serif;
+        }
+        .main-heading, .playfair-display-font {
+            font-family: 'Playfair Display', serif !important;
+        }
+        .category-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .category-card:hover .category-image {
+            transform: scale(1.05);
+        }
+        .category-card {
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .category-card:hover {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            transform: translateY(-4px) scale(1.02);
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        @media (max-width: 768px) {
+            .category-image { height: 140px; }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="sticky-nav bg-white shadow-lg py-3 md:py-4 mb-2 border-b border-gray-200" style="box-shadow:0 2px 12px rgba(0,0,0,0.04);">
+        <div class="container mx-auto pl-2 pr-4 md:pl-4 md:pr-8 flex flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3 min-w-0 flex-shrink-0">
+                <img src="assets/images/logo1.jpg" alt="Khan's Wardrobe Logo" style="height:44px; width:auto; border-radius:0.5rem; box-shadow:0 2px 8px rgba(0,0,0,0.07); object-fit:contain;" />
+                <span class="text-xl md:text-2xl font-extrabold text-gray-900 main-heading leading-tight whitespace-nowrap">KHAN'S WARDROBE</span>
+            </div>
+            <nav class="flex-1 flex justify-center">
+                <ul class="flex flex-row justify-center items-center space-x-6">
+                    <li><a href="index.html" class="nav-link text-red-700 font-bold hover:text-red-800 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md uppercase tracking-wider border-b-2 border-transparent hover:border-red-700">HOME</a></li>
+                    <li><a href="women.html" id="women-nav-link" class="nav-link text-gray-700 hover:text-red-700 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md uppercase tracking-wider font-bold border-b-2 border-transparent hover:border-red-700">WOMEN</a></li>
+                    <li><a href="men.html" id="men-nav-link" class="nav-link text-gray-700 hover:text-red-700 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md uppercase tracking-wider font-bold border-b-2 border-transparent hover:border-red-700">MEN</a></li>
+                    <li><a href="boys_girls.html" id="boys-girls-nav-link" class="nav-link text-gray-700 hover:text-red-700 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md uppercase tracking-wider font-bold border-b-2 border-transparent hover:border-red-700 whitespace-nowrap">BOYS & GIRLS</a></li>
+                </ul>
+            </nav>
+            <div class="flex items-center space-x-3 min-w-fit">
+                <button id="open-login-modal" class="bg-red-700 hover:bg-red-800 text-white font-bold text-base md:text-lg uppercase tracking-wider px-4 py-2 rounded-md shadow-sm transition h-11">LOGIN</button>
+                <a href="register.html" class="bg-white border-2 border-red-700 text-red-700 hover:bg-red-700 hover:text-white font-bold text-base md:text-lg uppercase tracking-wider px-4 py-2 rounded-md shadow-sm transition h-11 flex items-center justify-center">REGISTER</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative bg-cover bg-center h-96 flex items-center justify-center text-white text-center rounded-b-xl overflow-hidden shadow-xl mb-12 md:mb-16" style="background-image: url('assets/images/w1.png');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 p-6 max-w-2xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 playfair-display-font leading-tight">Elegance Redefined</h2>
+            <p class="text-lg md:text-xl mb-6 font-light">Discover our exquisite collection of traditional and contemporary wear.</p>
+            <a href="#m1" class="inline-block bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Shop Now</a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 md:px-6 py-8 md:py-12">
+        <!-- Shop By Women Category Section -->
+        <section class="mb-12 md:mb-16" id="m1">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 md:mb-8 text-center playfair-display-font">Shop By Women Category</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <!-- Women's Category Card 1: Unstitched -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="women.html#unstitched-section">
+                    <img src="assets/images/w1.png" alt="Unstitched" class="category-image">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800">Unstitched</h3>
+                    </div>
+                </div>
+                <!-- Women's Category Card 2: Stitched -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="women.html#stitched-section">
+                    <img src="assets/images/w2.png" alt="Stitched" class="category-image">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800">Stitched</h3>
+                    </div>
+                </div>
+                <!-- Women's Category Card 3: Kurti -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="women.html#kurti-section">
+                    <img src="assets/images/w3.png" alt="Kurti" class="category-image">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800">Kurti</h3>
+                    </div>
+                </div>
+                <!-- Women's Category Card 4: Trousers -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="women.html#formals-section">
+                    <img src="assets/images/w4.png" alt="Trousers" class="category-image">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800">Trousers</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop By Men Category Section -->
+        <section class="mb-12 md:mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 md:mb-8 text-center playfair-display-font">Shop By Men Category</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <!-- Men's Category Card 1: Kameez Shalwar -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="men.html#kameez-shalwar-section">
+                    <img src="assets/images/m1.png" alt="Kameez Shalwar" class="category-image">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800">Kameez Shalwar</h3>
+                    </div>
+                </div>
+                <!-- Men's Category Card 2: Kurta -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="men.html#kurta-section">
+                    <img src="assets/images/m2.png" alt="Kurta" class="category-image">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800">Kurta</h3>
+                    </div>
+                </div>
+                <!-- Men's Category Card 3: Waistcoat -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="men.html#waistcoat-section">
+                    <img src="assets/images/m3.png" alt="Waistcoat" class="category-image">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800">Waistcoat</h3>
+                    </div>
+                </div>
+                <!-- Men's Category Card 4: Grooms Sherwani -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="men.html#grooms-collection-section">
+                    <img src="assets/images/m4.png" alt="Grooms Sherwani" class="category-image">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800">Grooms Sherwani</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop By Boys & Girls Category Section -->
+        <section class="mb-12 md:mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 md:mb-8 text-center playfair-display-font">Shop By Boys & Girls Category</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <!-- Boys & Girls Category Card 1: Teen Girls -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="boys_girls.html#teen-girls-section">
+                    <img src="assets/images/c1.png" alt="Teen Girls" class="category-image">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800">Teen Girls</h3>
+                    </div>
+                </div>
+                <!-- Boys & Girls Category Card 2: Teen Boys -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="boys_girls.html#teen-boys-section">
+                    <img src="assets/images/c2.png" alt="Teen Boys" class="category-image">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800">Teen Boys</h3>
+                    </div>
+                </div>
+                <!-- Boys & Girls Category Card 3: Kid Girls -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="boys_girls.html#kid-girls-section">
+                    <img src="assets/images/c3.png" alt="Kid Girls" class="category-image">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800">Kid Girls</h3>
+                    </div>
+                </div>
+                <!-- Boys & Girls Category 4: Kid Boys -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="boys_girls.html#kid-girls-section">
+                    <img src="assets/images/c4.png" alt="Kid Boys" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h3 class="text-lg md:text-xl font-semibold text-gray-800">Kid Boys</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6 md:py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-base md:text-lg">&copy; 2025 KHAN'S WARDROBE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+    <!-- Login Modal -->
+    <div id="login-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-2xl p-8 w-full max-w-md relative border-t-8 border-red-700">
+            <button id="close-login-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+            <h2 class="text-2xl font-bold mb-4 text-center playfair-display-font text-red-700">Admin Login</h2>
+            <form id="admin-login-form" class="space-y-4">
+                <input type="text" id="admin-email" placeholder="Admin Username" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-700" />
+                <input type="password" id="admin-password" placeholder="Password" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-700" />
+                <button type="submit" class="w-full bg-red-700 hover:bg-red-800 text-white font-semibold py-2 px-4 rounded-md transition">Login as Admin</button>
+            </form>
+        </div>
+    </div>
+    <script>
+    // Modal logic
+    document.getElementById('open-login-modal').onclick = function() {
+        document.getElementById('login-modal').classList.remove('hidden');
+    };
+    document.getElementById('close-login-modal').onclick = function() {
+        document.getElementById('login-modal').classList.add('hidden');
+    };
+    // Admin login logic
+    document.getElementById('admin-login-form').onsubmit = async function(e) {
+        e.preventDefault();
+        const email = document.getElementById('admin-email').value.trim();
+        const password = document.getElementById('admin-password').value;
+        const res = await fetch('http://localhost:3000/api/admin-login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username: email, password })
+        });
+        const data = await res.json();
+        if (data.success) {
+            localStorage.setItem('isAdmin', 'true');
+            window.location.href = 'admin_dashboard.html';
+        } else {
+            alert(data.message || 'Invalid admin credentials.');
+        }
+    };
+    </script>
+</body>
+</html>

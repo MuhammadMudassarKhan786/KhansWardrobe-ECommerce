@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Collection - KHAN'S WARDROBE</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file (reusing the main style.css) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for 'Inter' and 'Playfair Display' -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased font-inter">
+    <header class="bg-white shadow-lg py-4 md:py-5">
+        <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center">
+            <!-- Brand Logo/Name -->
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 main-heading mb-4 md:mb-0">KHAN'S WARDROBE</h1>
+            <!-- Navigation -->
+            <nav class="w-full md:w-auto">
+                <ul class="flex flex-wrap justify-center md:space-x-8 space-x-4">
+                    <li><a href="index.html" class="nav-link text-gray-700 hover:text-gray-900 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">HOME</a></li>
+                    <li class="relative group">
+                        <a href="women.html" id="women-nav-link" class="nav-link text-red-700 font-bold hover:text-red-800 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">WOMEN</a>
+                        <!-- Women's Subcategories Dropdown (visible on hover/click) -->
+                        <div id="women-submenu" class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top md:group-hover:block hidden">
+                            <a href="#exclusive-gift-box-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">EXCLUSIVE GIFT BOX</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">STITCHED</h4>
+                            <a href="#stitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">2 PIECE</a>
+                            <a href="#stitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">3 PIECE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">UN-STITCHED</h4>
+                            <a href="#unstitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">1 PIECE</a>
+                            <a href="#unstitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">2 PIECE</a>
+                            <a href="#unstitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">3 PIECE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">KURTI</h4>
+                            <a href="#kurti-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">TOPS</a>
+                            <a href="#kurti-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL KURTI</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">FORMALS</h4>
+                            <a href="#formals-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL STITCHED</a>
+                            <a href="#formals-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL UNSTITCHED</a>
+                            <a href="#formals-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL KURTI</a>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <!-- Men's Nav Link and Dropdown -->
+                        <a href="men.html" id="men-nav-link" class="nav-link text-gray-700 hover:text-gray-900 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">MEN</a>
+                        <div id="men-submenu" class="absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-md shadow-lg py-2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top hidden md:group-hover:block">
+                            <a href="men.html#exclusive-gift-box-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">EXCLUSIVE GIFT BOX</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">KAMEEZ SHALWAR</h4>
+                            <a href="men.html#kameez-shalwar-casual" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">CASUAL</a>
+                            <a href="men.html#kameez-shalwar-semi-formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SEMI-FORMAL</a>
+                            <a href="men.html#kameez-shalwar-formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL</a>
+                            <a href="men.html#kameez-shalwar-exclusive" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">EXCLUSIVE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">KURTA</h4>
+                            <a href="men.html#kurta-casual" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">CASUAL</a>
+                            <a href="men.html#kurta-semi-formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SEMI-FORMAL</a>
+                            <a href="men.html#kurta-formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL</a>
+                            <a href="men.html#kurta-short" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SHORT KURTA</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="men.html#kameez-shalwar-waistcoat" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">KAMEEZ SHALWAR & WAISTCOAT</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">UNSTITCHED FABRIC</h4>
+                            <a href="men.html#unstitched-platinum" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">PLATINUM CLASS</a>
+                            <a href="men.html#unstitched-gold" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">GOLD CLASS</a>
+                            <a href="men.html#unstitched-silver" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SILVER CLASS</a>
+                            <a href="men.html#unstitched-boski" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">BOSKI</a>
+                            <a href="men.html#unstitched-expression" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">EXPRESSION</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="men.html#sweaters-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">SWEATERS</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="men.html#waistcoat-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">WAISTCOAT</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="men.html#caps-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">CAPS</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="men.html#shawl-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">SHAWL</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="men.html#pocket-square-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">POCKET SQUARE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">GROOMS COLLECTION</h4>
+                            <a href="men.html#grooms-sherwani" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SHERWANI</a>
+                            <a href="men.html#grooms-turban" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">TURBAN</a>
+                            <a href="men.html#grooms-khussa" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">KHUSSA</a>
+                            <a href="men.html#grooms-special-kurta" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SPECIAL KURTA</a>
+                            <a href="men.html#grooms-teen-boys" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">TEEN BOYS</a>
+                            <a href="men.html#grooms-kid-boys" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">KID BOYS</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <!-- Boys & Girls Nav Link and Dropdown -->
+                        <a href="boys_girls.html" id="boys-girls-nav-link" class="nav-link text-gray-700 hover:text-gray-900 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">BOYS & GIRLS</a>
+                        <div id="boys-girls-submenu" class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top hidden md:group-hover:block">
+                            <a href="boys_girls.html#teen-girls-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">TEEN GIRLS</a>
+                            <a href="boys_girls.html#teen-boys-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">TEEN BOYS</a>
+                            <a href="boys_girls.html#kid-girls-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">KID GIRLS</a>
+                            <a href="boys_girls.html#kid-boys-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">KID BOYS</a>
+                            <a href="boys_girls.html#infant-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">INFANT</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-6 py-8 md:py-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center font-playfair-display">Women's Exclusive Collection</h2>
+
+        <!-- Unstitched Section -->
+        <section id="unstitched-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 font-playfair-display">Unstitched Collection</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Unstitched 1PC -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=women&subcategory=unstitched_1pc">
+                    <img src="assets/images/wu1.png" alt="1PC Unstitched" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">1 PC Unstitched</h4>
+                        <p class="text-gray-600">Elegant single piece designs.</p>
+                    </div>
+                </div>
+                <!-- Unstitched 2PC -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=women&subcategory=unstitched_2pc">
+                    <img src="assets/images/wu2.png" alt="2PC Unstitched" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">2 PC Unstitched</h4>
+                        <p class="text-gray-600">Coordinated two-piece sets.</p>
+                    </div>
+                </div>
+                <!-- Unstitched 3PC -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=women&subcategory=unstitched_3pc">
+                    <img src="assets/images/wu3.png" alt="3PC Unstitched" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">3 PC Unstitched</h4>
+                        <p class="text-gray-600">Complete three-piece ensembles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stitched Section -->
+        <section id="stitched-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 font-playfair-display">Stitched Collection</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Stitched 2PC -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=women&subcategory=stitched_2pc">
+                    <img src="assets/images/ws1.png" alt="2PC Stitched" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">2 PC Stitched</h4>
+                        <p class="text-gray-600">Ready-to-wear two-piece outfits.</p>
+                    </div>
+                </div>
+                <!-- Stitched 3PC -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=women&subcategory=stitched_3pc">
+                    <img src="assets/images/ws2.png" alt="3PC Stitched" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">3 PC Stitched</h4>
+                        <p class="text-gray-600">Fully stitched three-piece ensembles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kurti Section -->
+        <section id="kurti-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 font-playfair-display">Kurti Collection</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Kurti Tops -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=women&subcategory=kurti_tops">
+                    <img src="assets/images/k1.png" alt="Kurti Tops" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Kurti Tops</h4>
+                        <p class="text-gray-600">Stylish and comfortable tops.</p>
+                    </div>
+                </div>
+                <!-- Formal Kurti -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=women&subcategory=kurti_formal">
+                    <img src="assets/images/k2.png" alt="Formal Kurti" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Formal Kurti</h4>
+                        <p class="text-gray-600">Elegant kurtis for special occasions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formals Section -->
+        <section id="formals-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 font-playfair-display">Formals Collection</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Formal Stitched -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=women&subcategory=formal_stitched">
+                    <img src="assets/images/f1.png" alt="Formal Stitched" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Formal Stitched</h4>
+                        <p class="text-gray-600">Ready-to-wear formal attire.</p>
+                    </div>
+                </div>
+                <!-- Formal Unstitched -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=women&subcategory=formal_unstitched">
+                    <img src="assets/images/f2.png" alt="Formal Unstitched" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Formal Unstitched</h4>
+                        <p class="text-gray-600">Unstitched fabrics for custom formal wear.</p>
+                    </div>
+                </div>
+                <!-- Formal Kurti -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=women&subcategory=formal_kurti">
+                    <img src="assets/images/f3.png" alt="Formal Kurti" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Formal Kurti</h4>
+                        <p class="text-gray-600">Designer formal kurtis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exclusive Gift Box Section -->
+        <section id="exclusive-gift-box-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 font-playfair-display">Exclusive Gift Box</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Gift Box Example -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=women&type=giftbox">
+                    <img src="assets/images/g1.png" alt="Gift Box" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Premium Gift Box</h4>
+                        <p class="text-gray-600">Curated selections for special occasions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6 md:py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-base md:text-lg">&copy; 2025 KHAN'S WARDROBE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+    <script src="women.js"></script> <!-- New JS file for women's page specific logic -->
+</body>
+</html>

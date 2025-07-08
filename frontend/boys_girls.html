@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boys & Girls Collection - KHAN'S WARDROBE</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file (reusing the main style.css) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for 'Inter' and 'Playfair Display' -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+    <header class="bg-white shadow-lg py-4 md:py-5">
+        <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center">
+            <!-- Brand Logo/Name -->
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 main-heading mb-4 md:mb-0">KHAN'S WARDROBE</h1>
+            <!-- Navigation -->
+            <nav class="w-full md:w-auto">
+                <ul class="flex flex-wrap justify-center md:space-x-8 space-x-4">
+                    <li><a href="index.html" class="nav-link text-gray-700 hover:text-gray-900 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">HOME</a></li>
+                    <li class="relative group">
+                        <a href="women.html" id="women-nav-link" class="nav-link text-gray-700 hover:text-gray-900 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">WOMEN</a>
+                        <!-- Women's Subcategories Dropdown (visible on hover/click) -->
+                        <div id="women-submenu" class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top hidden md:group-hover:block">
+                            <a href="women.html#exclusive-gift-box-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">EXCLUSIVE GIFT BOX</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">STITCHED</h4>
+                            <a href="women.html#stitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">2 PIECE</a>
+                            <a href="women.html#stitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">3 PIECE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">UN-STITCHED</h4>
+                            <a href="women.html#unstitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">1 PIECE</a>
+                            <a href="women.html#unstitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">2 PIECE</a>
+                            <a href="women.html#unstitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">3 PIECE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">KURTI</h4>
+                            <a href="women.html#kurti-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">TOPS</a>
+                            <a href="women.html#kurti-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL KURTI</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">FORMALS</h4>
+                            <a href="women.html#formals-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL STITCHED</a>
+                            <a href="women.html#formals-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL UNSTITCHED</a>
+                            <a href="women.html#formals-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL KURTI</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <a href="men.html" id="men-nav-link" class="nav-link text-gray-700 hover:text-gray-900 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">MEN</a>
+                        <div id="men-submenu" class="absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-md shadow-lg py-2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top hidden md:group-hover:block">
+                            <a href="men.html#exclusive-gift-box-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">EXCLUSIVE GIFT BOX</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">KAMEEZ SHALWAR</h4>
+                            <a href="men.html#kameez-shalwar-casual" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">CASUAL</a>
+                            <a href="men.html#kameez-shalwar-semi-formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SEMI-FORMAL</a>
+                            <a href="men.html#kameez-shalwar-formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL</a>
+                            <a href="men.html#kameez-shalwar-exclusive" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">EXCLUSIVE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">KURTA</h4>
+                            <a href="men.html#kurta-casual" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">CASUAL</a>
+                            <a href="men.html#kurta-semi-formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SEMI-FORMAL</a>
+                            <a href="men.html#kurta-formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL</a>
+                            <a href="men.html#kurta-short" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SHORT KURTA</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="men.html#kameez-shalwar-waistcoat" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">KAMEEZ SHALWAR & WAISTCOAT</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">UNSTITCHED FABRIC</h4>
+                            <a href="men.html#unstitched-platinum" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">PLATINUM CLASS</a>
+                            <a href="men.html#unstitched-gold" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">GOLD CLASS</a>
+                            <a href="men.html#unstitched-silver" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SILVER CLASS</a>
+                            <a href="men.html#unstitched-boski" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">BOSKI</a>
+                            <a href="men.html#unstitched-expression" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">EXPRESSION</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="men.html#sweaters" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">SWEATERS</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="men.html#waistcoat" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">WAISTCOAT</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="men.html#caps" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">CAPS</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="men.html#shawl" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">SHAWL</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="men.html#pocket-square" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">POCKET SQUARE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">GROOMS COLLECTION</h4>
+                            <a href="men.html#grooms-sherwani" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SHERWANI</a>
+                            <a href="men.html#grooms-turban" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">TURBAN</a>
+                            <a href="men.html#grooms-khussa" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">KHUSSA</a>
+                            <a href="men.html#grooms-special-kurta" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SPECIAL KURTA</a>
+                            <a href="men.html#grooms-teen-boys" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">TEEN BOYS</a>
+                            <a href="men.html#grooms-kid-boys" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">KID BOYS</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <!-- Boys & Girls Nav Link and Dropdown -->
+                        <a href="boys_girls.html" id="boys-girls-nav-link" class="nav-link text-red-700 font-bold hover:text-red-800 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">BOYS & GIRLS</a>
+                        <div id="boys-girls-submenu" class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top hidden md:group-hover:block">
+                            <a href="product_listing.html?category=boys_girls&subcategory=teen_girls" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Teen Girls</a>
+                            <a href="product_listing.html?category=boys_girls&subcategory=teen_boys" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Teen Boys</a>
+                            <a href="product_listing.html?category=boys_girls&subcategory=kid_girls" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Kid Girls</a>
+                            <a href="product_listing.html?category=boys_girls&subcategory=kid_boys" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Kid Boys</a>
+                            <a href="product_listing.html?category=boys_girls&subcategory=infant" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Infant</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative bg-cover bg-center h-96 flex items-center justify-center text-white text-center rounded-b-xl overflow-hidden shadow-xl mb-12 md:mb-16">
+        <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay -->
+        <div class="relative z-10 p-6 max-w-2xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 playfair-display-font leading-tight">Fun & Fashion for Little Ones</h2>
+            <p class="text-lg md:text-xl mb-6 font-light">Explore our vibrant collection for boys and girls.</p>
+            <a href="#teen-girls-section" class="inline-block bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Shop Kids' Collection</a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 md:px-6 py-8 md:py-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center playfair-display-font">Boys & Girls Exclusive Collection</h2>
+
+        <!-- Teen Girls Section -->
+        <section id="teen-girls-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Teen Girls</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=boys_girls&subcategory=teen_girls">
+                        <img src="assets/images/gt1.png" alt="Teen Girl Outfit 1" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Trendy Dresses</h4>
+                        <p class="text-gray-600">Stylish outfits for young fashionistas.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=boys_girls&subcategory=teen_girls">
+                        <img src="assets/images/gt2.png" alt="Teen Girl Outfit 2" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Casual Wear</h4>
+                        <p class="text-gray-600">Comfortable and chic everyday styles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teen Boys Section -->
+        <section id="teen-boys-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Teen Boys</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\t1.png" alt="Teen Boy Outfit 1" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Smart Casuals</h4>
+                        <p class="text-gray-600">Cool and comfortable for growing boys.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\t2.png" alt="Teen Boy Outfit 2" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Traditional Wear</h4>
+                        <p class="text-gray-600">Cultural styles for young gentlemen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kid Girls Section -->
+        <section id="kid-girls-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Kid Girls</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\gt3.png" alt="Kid Girl Outfit 1" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Playful Dresses</h4>
+                        <p class="text-gray-600">Cute and comfy for little princesses.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\gt4.png" alt="Kid Girl Outfit 2" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Ethnic Wear</h4>
+                        <p class="text-gray-600">Traditional outfits for festive occasions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kid Boys Section -->
+        <section id="kid-boys-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Kid Boys</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\t3.png" alt="Kid Boy Outfit 1" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Smart Sets</h4>
+                        <p class="text-gray-600">Durable and stylish for active boys.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\t4.png" alt="Kid Boy Outfit 2" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Casual Playwear</h4>
+                        <p class="text-gray-600">Comfortable clothes for everyday fun.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infant Section -->
+        <section id="infant-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Infant Collection</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\ig1.png" alt="Infant Outfit 1" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Infant girl</h4>
+                        <p class="text-gray-600">Soft and gentle clothing for infants.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\ig2.png" alt="Infant Outfit 2" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Infant Boy</h4>
+                        <p class="text-gray-600">Adorable and comfortable sets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6 md:py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-base md:text-lg">&copy; 2025 KHAN'S WARDROBE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+    <script src="boys_girls.js"></script> <!-- JS file for boys & girls page specific logic -->
+</body>
+</html>

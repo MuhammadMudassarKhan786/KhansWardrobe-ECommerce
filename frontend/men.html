@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Collection - KHAN'S WARDROBE</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file (reusing the main style.css) -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for 'Inter' and 'Playfair Display' -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+    <header class="bg-white shadow-lg py-4 md:py-5">
+        <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center">
+            <!-- Brand Logo/Name -->
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 main-heading mb-4 md:mb-0">KHAN'S WARDROBE</h1>
+            <!-- Navigation -->
+            <nav class="w-full md:w-auto">
+                <ul class="flex flex-wrap justify-center md:space-x-8 space-x-4">
+                    <li><a href="index.html" class="nav-link text-gray-700 hover:text-gray-900 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">HOME</a></li>
+                    <li class="relative group">
+                        <a href="women.html" id="women-nav-link" class="nav-link text-gray-700 hover:text-gray-900 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">WOMEN</a>
+                        <!-- Women's Subcategories Dropdown (visible on hover/click) -->
+                        <div id="women-submenu" class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top hidden md:group-hover:block">
+                            <a href="women.html#exclusive-gift-box-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">EXCLUSIVE GIFT BOX</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">STITCHED</h4>
+                            <a href="women.html#stitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">2 PIECE</a>
+                            <a href="women.html#stitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">3 PIECE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">UN-STITCHED</h4>
+                            <a href="women.html#unstitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">1 PIECE</a>
+                            <a href="women.html#unstitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">2 PIECE</a>
+                            <a href="women.html#unstitched-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">3 PIECE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">KURTI</h4>
+                            <a href="women.html#kurti-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">TOPS</a>
+                            <a href="women.html#kurti-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL KURTI</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">FORMALS</h4>
+                            <a href="women.html#formals-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL STITCHED</a>
+                            <a href="women.html#formals-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL UNSTITCHED</a>
+                            <a href="women.html#formals-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL KURTI</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <a href="men.html" id="men-nav-link" class="nav-link text-red-700 font-bold hover:text-red-800 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">MEN</a>
+                        <div id="men-submenu" class="absolute left-1/2 -translate-x-1/2 mt-2 w-64 bg-white rounded-md shadow-lg py-2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top hidden md:group-hover:block">
+                            <a href="product_listing.html?category=men&subcategory=exclusive_gift_box" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">EXCLUSIVE GIFT BOX</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">KAMEEZ SHALWAR</h4>
+                            <a href="product_listing.html?category=men&subcategory=kameez_shalwar_casual" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">CASUAL</a>
+                            <a href="product_listing.html?category=men&subcategory=kameez_shalwar_semi_formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SEMI-FORMAL</a>
+                            <a href="product_listing.html?category=men&subcategory=kameez_shalwar_formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL</a>
+                            <a href="product_listing.html?category=men&subcategory=kameez_shalwar_exclusive" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">EXCLUSIVE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">KURTA</h4>
+                            <a href="product_listing.html?category=men&subcategory=kurta_casual" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">CASUAL</a>
+                            <a href="product_listing.html?category=men&subcategory=kurta_semi_formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SEMI-FORMAL</a>
+                            <a href="product_listing.html?category=men&subcategory=kurta_formal" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">FORMAL</a>
+                            <a href="product_listing.html?category=men&subcategory=kurta_short" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SHORT KURTA</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="product_listing.html?category=men&subcategory=kameez_shalwar_waistcoat" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">KAMEEZ SHALWAR & WAISTCOAT</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">UNSTITCHED FABRIC</h4>
+                            <a href="product_listing.html?category=men&subcategory=unstitched_platinum" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">PLATINUM CLASS</a>
+                            <a href="product_listing.html?category=men&subcategory=unstitched_gold" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">GOLD CLASS</a>
+                            <a href="product_listing.html?category=men&subcategory=unstitched_silver" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SILVER CLASS</a>
+                            <a href="product_listing.html?category=men&subcategory=unstitched_boski" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">BOSKI</a>
+                            <a href="product_listing.html?category=men&subcategory=unstitched_expression" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">EXPRESSION</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="product_listing.html?category=men&subcategory=sweaters" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">SWEATERS</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="product_listing.html?category=men&subcategory=waistcoat" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">WAISTCOAT</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="product_listing.html?category=men&subcategory=caps" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">CAPS</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="product_listing.html?category=men&subcategory=shawl" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">SHAWL</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <a href="product_listing.html?category=men&subcategory=pocket_square" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">POCKET SQUARE</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            <h4 class="px-4 py-2 text-gray-600 font-semibold">GROOMS COLLECTION</h4>
+                            <a href="product_listing.html?category=men&subcategory=grooms_collection" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SHERWANI</a>
+                            <a href="product_listing.html?category=men&subcategory=grooms_turban" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">TURBAN</a>
+                            <a href="product_listing.html?category=men&subcategory=grooms_khussa" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">KHUSSA</a>
+                            <a href="product_listing.html?category=men&subcategory=grooms_special_kurta" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">SPECIAL KURTA</a>
+                            <a href="product_listing.html?category=men&subcategory=grooms_teen_boys" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">TEEN BOYS</a>
+                            <a href="product_listing.html?category=men&subcategory=grooms_kid_boys" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 pl-6">KID BOYS</a>
+                            <div class="border-t border-gray-200 my-1"></div>
+                            
+                        </div>
+                    </li>
+                    <li><li class="relative group">
+                        <!-- Boys & Girls Nav Link and Dropdown -->
+                        <a href="boys_girls.html" id="boys-girls-nav-link" class="nav-link text-red-700 font-bold hover:text-red-800 transition duration-300 text-base md:text-lg px-2 py-1 rounded-md">BOYS & GIRLS</a>
+                        <div id="boys-girls-submenu" class="absolute left-1/2 -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 origin-top hidden md:group-hover:block">
+                            <a href="boys_girls.html#teen-girls-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">TEEN GIRLS</a>
+                            <a href="boys_girls.html#teen-boys-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">TEEN BOYS</a>
+                            <a href="boys_girls.html#kid-girls-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">KID GIRLS</a>
+                            <a href="boys_girls.html#kid-boys-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">KID BOYS</a>
+                            <a href="boys_girls.html#infant-section" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">INFANT</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative bg-cover bg-center h-96 flex items-center justify-center text-white text-center rounded-b-xl overflow-hidden shadow-xl mb-12 md:mb-16">
+        <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay -->
+        <div class="relative z-10 p-6 max-w-2xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 playfair-display-font leading-tight">Sophistication for Him</h2>
+            <p class="text-lg md:text-xl mb-6 font-light">Explore our refined collection for every occasion.</p>
+            <a href="#kameez-shalwar-section" class="inline-block bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">View Men's Collection</a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 md:px-6 py-8 md:py-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8 text-center playfair-display-font">Men's Exclusive Collection</h2>
+
+        <!-- Exclusive Gift Box Section -->
+        <section id="exclusive-gift-box-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Exclusive Gift Box</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mg1.png" alt="Men's Gift Box" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Gentleman's Gift Set</h4>
+                        <p class="text-gray-600">Curated selections for the discerning man.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kameez Shalwar Section -->
+        <section id="kameez-shalwar-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Kameez Shalwar</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=men&subcategory=kameez_shalwar_casual">
+                        <img src="assets/images/ms1.png" alt="Casual Kameez Shalwar" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Casual</h4>
+                        <p class="text-gray-600">Comfortable everyday wear.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=men&subcategory=kameez_shalwar_semi_formal">
+                        <img src="assets/images/ms2.png" alt="Semi-Formal Kameez Shalwar" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Semi-Formal</h4>
+                        <p class="text-gray-600">Perfect for gatherings.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=men&subcategory=kameez_shalwar_formal">
+                        <img src="assets/images/ms3.png" alt="Formal Kameez Shalwar" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Formal</h4>
+                        <p class="text-gray-600">For special events.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=men&subcategory=kameez_shalwar_exclusive">
+                        <img src="assets/images/ms4.png" alt="Exclusive Kameez Shalwar" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Exclusive</h4>
+                        <p class="text-gray-600">Unique designs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kurta Section -->
+        <section id="kurta-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Kurta</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=men&subcategory=kurta_casual">
+                        <img src="assets/images/mk1.png" alt="Casual Kurta" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Casual</h4>
+                        <p class="text-gray-600">Everyday comfort.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=men&subcategory=kurta_semi_formal">
+                        <img src="assets/images/mk2.png" alt="Semi-Formal Kurta" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Semi-Formal</h4>
+                        <p class="text-gray-600">Versatile styles.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=men&subcategory=kurta_formal">
+                        <img src="assets/images/mk3.png" alt="Formal Kurta" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Formal</h4>
+                        <p class="text-gray-600">For celebratory moments.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <a href="product_listing.html?category=men&subcategory=kurta_short">
+                        <img src="assets/images/mk4.png" alt="Short Kurta" class="category-image w-full h-auto object-cover rounded-t-xl">
+                    </a>
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Short Kurta</h4>
+                        <p class="text-gray-600">Trendy short kurtas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kameez Shalwar & Waistcoat Section -->
+        <section id="kameez-shalwar-waistcoat-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Kameez Shalwar & Waistcoat</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mf.png" alt="Kameez Shalwar & Waistcoat" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Complete Sets</h4>
+                        <p class="text-gray-600">Elegantly paired outfits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unstitched Fabric Section -->
+        <section id="unstitched-fabric-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Unstitched Fabric</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <div id="unstitched-platinum" class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mu1.png" alt="Platinum Class Fabric" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Platinum Class</h4>
+                        <p class="text-gray-600">Premium quality fabrics.</p>
+                    </div>
+                </div>
+                <div id="unstitched-gold" class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mu2.png" alt="Gold Class Fabric" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Gold Class</h4>
+                        <p class="text-gray-600">Luxurious and fine.</p>
+                    </div>
+                </div>
+                <div id="unstitched-silver" class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mu3.png" alt="Silver Class Fabric" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Silver Class</h4>
+                        <p class="text-gray-600">High-quality materials.</p>
+                    </div>
+                </div>
+                <div id="unstitched-boski" class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mu4.png" alt="Boski Fabric" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Boski</h4>
+                        <p class="text-gray-600">Traditional and soft.</p>
+                    </div>
+                </div>
+                <div id="unstitched-expression" class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mu5.png" alt="Expression Fabric" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Expression</h4>
+                        <p class="text-gray-600">Unique patterns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sweaters Section -->
+        <section id="sweaters-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Sweaters</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\ms5.png" alt="Men's Sweaters" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Warm & Stylish</h4>
+                        <p class="text-gray-600">Comfort for colder days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Waistcoat Section -->
+        <section id="waistcoat-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Waistcoat</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mw1.png" alt="Men's Waistcoat" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Formal Waistcoats</h4>
+                        <p class="text-gray-600">Add a touch of class.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Caps Section -->
+        <section id="caps-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Caps</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mc1.png" alt="Men's Caps" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Stylish Headwear</h4>
+                        <p class="text-gray-600">Complete your look.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shawl Section -->
+        <section id="shawl-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Shawl</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\ms6.png" alt="Men's Shawl" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Elegant Shawls</h4>
+                        <p class="text-gray-600">Luxurious and warm.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pocket Square Section -->
+        <section id="pocket-square-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Pocket Square</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mp1.png" alt="Pocket Square" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Stylish Accents</h4>
+                        <p class="text-gray-600">The perfect finishing touch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grooms Collection Section -->
+        <section id="grooms-collection-section" class="mb-12 md:mb-16">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 playfair-display-font">Grooms Collection</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <div id="grooms-sherwani" class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\ms7.png" alt="Sherwani" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Sherwani</h4>
+                        <p class="text-gray-600">Grand and traditional.</p>
+                    </div>
+                </div>
+                <div id="grooms-turban" class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mt1.png" alt="Turban" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Turban</h4>
+                        <p class="text-gray-600">Royal headwear.</p>
+                    </div>
+                </div>
+                <div id="grooms-khussa" class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mk5.png" alt="Khussa" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Khussa</h4>
+                        <p class="text-gray-600">Traditional footwear.</p>
+                    </div>
+                </div>
+                <div id="grooms-special-kurta" class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mk6.png" alt="Special Kurta" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Special Kurta</h4>
+                        <p class="text-gray-600">Unique designs for grooms.</p>
+                    </div>
+                </div>
+                <div id="grooms-teen-boys" class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mt2.png" alt="Teen Boys Grooms" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Teen Boys</h4>
+                        <p class="text-gray-600">Groomsmen attire for young ones.</p>
+                    </div>
+                </div>
+                <div id="grooms-kid-boys" class="bg-white rounded-xl shadow-lg overflow-hidden category-card">
+                    <img src="assets\images\mk7.png" alt="Kid Boys Grooms" class="category-image">
+                    <div class="p-4 md:p-5 text-center">
+                        <h4 class="text-lg md:text-xl font-semibold text-gray-800">Kid Boys</h4>
+                        <p class="text-gray-600">Charming outfits for little groomsmen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6 md:py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-base md:text-lg">&copy; 2025 KHAN'S WARDROBE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+    <script src="men.js"></script> <!-- JS file for men's page specific logic -->
+</body>
+</html>
